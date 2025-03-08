@@ -26,18 +26,17 @@ input2 = int(input("enter second number:"))
 remainder = input1 % input2
 print(remainder)
 #Prog06: Create a program that ask user to input 10 numbers. Print the result of the first number minus all of the remaining numbers.
-a = int(input("enter first number:"))
-b = int(input("enter second number:"))
-c = int(input("enter third number:"))
-d = int(input("enter fourth number:"))
-e = int(input("enter fifth number:"))
-f = int(input("enter sixth number:"))
-g = int(input("enter seventhnumber:"))
-h = int(input("enter  eigth number:"))
-i = int(input("enter ninth number:"))
-j = int(input("enter  tenth number:"))
-difference = a - b - c - d - e - f - g - h - i - j
-print(difference)
+#input
+numberlist = []
+for i in range(10):
+    number = int(input("input number:"))
+    numberlist.append(number)
+#minus
+    difference = numberlist[0]
+for diff in numberlist[1:]:
+    difference -= diff
+print (difference)
+
 
 #Prog07: Create a program that ask user to input 10 numbers. Print how many are even numbers.
 even = 0 
